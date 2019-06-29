@@ -1,0 +1,113 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Microsoft YaHei,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,SimSun,sans-serif;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+h1,h2,h3,h4,h5,h6,i,strong {
+  font-weight: normal;
+}
+img {
+  vertical-align: middle;
+  border: none;
+}
+input {
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+.clearfix::before,
+.clearfix::after{
+  content: '';
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.fl {
+  float:left;
+}
+.fr {
+  float:right;
+}
+.box {
+  display: block;
+}
+.container_m {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+.h100 {
+  height: 100%;
+}
+.swing {
+  animation: swing 1s ease;
+}
+
+/* 字体图标 */
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../font/iconfont.woff2') format('woff2'),
+      url('../font/iconfont.woff') format('woff'),
+      url('../font/iconfont.ttf') format('truetype'),
+      url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 动画效果 */
+@keyframes swing
+{
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-5deg) scale(0.9);
+  }
+  30% {
+    transform: rotate(5deg) scale(1.1);
+  }
+  40% {
+    transform: rotate(-5deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(5deg) scale(1.1);
+  }
+  60% {
+    transform: rotate(-5deg) scale(1.1);
+  }
+  70% {
+    transform: rotate(5deg) scale(1.1);
+  }
+  80% {
+    transform: rotate(-5deg) scale(1.1);
+  }
+  90% {
+    transform: rotate(5deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+@keyframes scale {
+  0% {transform: scale(1)}
+  50% {transform: scale(1.05)}
+  100% {transform: scale(1)}
+}

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+  <title>南昌市不动产登记服务平台</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./js/jQuery1.12.4.js"></script>
+  <!-- <script src="./js/popper.js"></script> -->
+  <script src="./js/bootstrap.js"></script>
+
+</head>
+<body>
+  <!-- 头部 -->
+  <div class="header">
+    <!-- 顶部 -->
+    <div class="top_bar">
+      <div class="container_m">
+        <!-- 顶部标题 -->
+        <span class="fl h100 title">欢迎来到南昌市不动产互联网平台</span>
+        <!-- 右边入口 -->
+        <div class="fr h100 entry">
+          <!-- APP二维码 -->
+          <div class="fl h100 appCode">
+            <div class="icon fl">
+                <i class="iconfont">&#xe626;</i>
+            </div>
+            <span class="fl">APP下载</span>
+            <!-- 二维码图片 -->
+            <div class="code_container">
+              <div class="code">
+                <div class="arrow"></div>
+                <div>
+                  <img src="./image/app_img.163ba6e.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 微信公众号 -->
+          <div class="fl h100 weixinCode">
+            <div class="icon fl">
+                <i class="iconfont">&#xe67b;</i>
+            </div>
+            <span class="fl">微信公众号</span>
+            <!-- 二维码图片 -->
+            <div class="code_container">
+              <div class="code">
+                <div class="arrow"></div>
+                <div>
+                  <img src="./image/weixin_img.c75487b.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 登录 -->
+          <a href="https://www.ncsbdc.com/?qq#/account/login" class="fl h100 login">
+            <div class="fl icon">
+                <i class="iconfont">&#xe657;</i>
+            </div>
+            <span class="fl">登录</span>
+          </a>
+          <!-- 注册 -->
+          <a href="https://www.ncsbdc.com/?qq#/account/register" class="fl h100 register">
+            <div class="fl icon">
+                <i class="iconfont">&#xe87f;</i>
+            </div>
+            <span class="fl">注册</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- 头部主体 -->
+    <div class="top_content">
+      <div class="container_m">
+        <!-- 搜索框 -->
+        <div class="search_container clearfix">
+          <input class="fl search" type="text" placeholder="请输入您要搜索的内容">
+          <input class="fl iconfont btn_m" type="button" value="&#xe67a;">
+        </div>
+        <!-- 联系电话 -->
+        <div class="phone_number">
+          <p>0791-83863862</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 导航栏 -->
+  <div class="navbar">
+    <div class="container_m">
+        <ul class="h100">
+          <li class="fl active">
+            <a class="box" href="#">首页</a>
+          </li>
+          <li class="fl">
+            <a class="box" href="#">服务中心</a>
+          </li>
+          <li class="fl">
+            <a class="box" href="#">新房</a>
+          </li>
+          <li class="fl">
+            <a class="box" href="#">二手房</a>
+          </li>
+          <li class="fl">
+            <a class="box" href="#">租房</a>
+          </li>
+          <li class="fl">
+            <a class="box" href="#">新闻动态</a>
+          </li>
+          <li class="fl">
+            <a class="box" href="#">联系我们</a>
+          </li>
+        </ul>
+    </div>
+  </div>
+  <!-- 轮播图 -->
+  <div id="banner" class="carousel slide" data-ride="carousel">
+      <!-- 指示符 -->
+      <ul class="carousel-indicators">
+        <li data-target="#banner" data-slide-to="0" class="active"></li>
+        <li data-target="#banner" data-slide-to="1"></li>
+        <li data-target="#banner" data-slide-to="2"></li>
+        <li data-target="#banner" data-slide-to="3"></li>
+        <li data-target="#banner" data-slide-to="4"></li>
+      </ul>
+     
+      <!-- 轮播图片 -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./image/banner/index_banner_1.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="./image/banner/index_banner_2.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="./image/banner/index_banner_3.png">
+        </div>
+        <div class="carousel-item">
+          <img src="./image/banner/index_banner_4.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="./image/banner/index_banner_5.png">
+        </div>
+      </div>
+     
+      <!-- 左右切换按钮 -->
+      <a class="carousel-control-prev" href="#banner" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#banner" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+  </div>
+  <!-- 服务中心 -->
+  <div class="service_center">
+    <!-- 大小标题 -->
+    <h1 class="title">服务中心</h1>
+    <h3 class="title_s">整合互联网开发技术，提供高效优质的不动产登记服务</h3>
+    <!-- 主体部分 -->
+    <div class="content">
+      <div class="fl h100 aside">
+        <div class="item">
+          <a class="box h100" href="#">
+            <img class="fl" src="./image/service/left1.png" alt="">
+            <div class="fr intro h100">
+              <span class="box title">网上申请</span>
+              <p>足不出户，即可办理不动产业务。</p>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a class="box h100" href="#">
+            <img class="fl" src="./image/service/left2.png" alt="">
+            <div class="fr intro h100">
+              <span class="box title">办事指南</span>
+              <p>便捷贴心，让不动产登记中心与百姓零距离。</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="fl h100 center">
+        <img src="./image/service/center.png" alt="">
+        <a class="box" href="#">查看全部</a>
+      </div>
+      <div class="fl h100 aside">
+        <div class="item">
+          <a class="box h100" href="#">
+            <img class="fl" src="./image/service/right1.png" alt="">
+            <div class="fr intro h100">
+              <span class="box title">网上预约</span>
+              <p>可直接在网上预约服务时间。</p>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a class="box h100" href="#">
+            <img class="fl" src="./image/service/right2.png" alt="">
+            <div class="fr intro h100">
+              <span class="box title">进度查询</span>
+              <p>方便实用，小工具让你的生活更加舒适。</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 房源板块 -->
+  <div class="house_resource">
+    <!-- 大小标题 -->
+    <span class="box title">南昌房源</span>
+    <p class="title_s">集二手、新房、租房功能于一体，随时随地任性找房</p>
+    <!-- 主体部分 -->
+    <div class="content">
+      <!-- 选项列表 -->
+      <ul class="nav_list">
+        <li class="fl active">新房<span>/</span><span class="eng">BRIDAL CHAMBER</span></li>
+        <li class="fl middle">二手房<span>/</span><span class="eng">RESOLD APARTMENT</span></li>
+        <li class="fl">租房<span>/</span><span class="eng">RENTAL HOUSING</span></li>
+      </ul>
+      <!-- 选项列表对应内容 -->
+      <div class="list_container">
+        <!-- 新房内容 -->
+        <ul class="active">
+          <li>
+            <a class="box h100" href="#">
+              <img class="box" src="./image/house-resource/new1.jpg" alt="">
+              <div class="cover">
+                <span class="box">南昌融创文化旅游城</span>
+              </div>
+              <div class="intro">
+                <p class="addr">
+                  [新建区]<span>红谷滩区九龙大道东侧（南昌西站附近）</span>
+                </p>
+                <p class="price">
+                  均价：<span>16000元/平</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="box h100" href="#">
+              <img class="box" src="./image/house-resource/new2.jpg" alt="">
+              <div class="cover">
+                <span class="box">融创青山湖壹号</span>
+              </div>
+              <div class="intro">
+                <p class="addr">
+                  [东湖区]<span>青山北路99号</span>
+                </p>
+                <p class="price">
+                  均价：<span>15500元/平</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="box h100" href="#">
+              <img class="box" src="./image/house-resource/new3.jpg" alt="">
+              <div class="cover">
+                <span class="box">融创前湖道</span>
+              </div>
+              <div class="intro">
+                <p class="addr">
+                  [新建区]<span>新建区前湖大道与长征西路交汇处</span>
+                </p>
+                <p class="price">
+                  均价：<span>13000元/平</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="box h100" href="#">
+              <img class="box" src="./image/house-resource/new4.jpg" alt="">
+              <div class="cover">
+                <span class="box">绿地新里城名仕公馆</span>
+              </div>
+              <div class="intro">
+                <p class="addr">
+                  [东湖区]<span>江西省赣江新区儒乐湖新城绿地城市展厅金山大道2333</span>
+                </p>
+                <p class="price">
+                  均价：<span>10000元/平</span>
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!-- 二手房内容 -->
+        <ul>
+          <li>
+            <a class="box h100" href="#">
+              <img class="box" src="./image/house-resource/second-hand1.jpg" alt="">
+              <div class="highlignt">
+                186万元
+              </div>
+              <div class="intro">
+                <p class="details">
+                  <span class="addr">正荣御峰 学区房 江景房 带车位</span>
+                  <span class="decoration">毛坯装修</span>
+                </p>
+                <p class="details_s">
+                  <span>西湖区</span>
+                  <span>3室2厅1卫</span>
+                  <span>97.23m²</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="box h100" href="#">
+              <img class="box" src="./image/house-resource/second-hand2.jpg" alt="">
+              <div class="highlignt">
+                260万元
+              </div>
+              <div class="intro">
+                <p class="details">
+                  <span class="addr">万达广场旁莱蒙都会南区</span>
+                  <span class="decoration">精装装修</span>
+                </p>
+                <p class="details_s">
+                  <span>红谷滩区</span>
+                  <span>2室2厅1卫</span>
+                  <span>85.26m²</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="box h100" href="#">
+              <img class="box" src="./image/house-resource/second-hand3.jpg" alt="">
+              <div class="highlignt">
+                230万元
+              </div>
+              <div class="intro">
+                <p class="details">
+                  <span class="addr">一线江景房，低价出售。</span>
+                  <span class="decoration">豪华装修</span>
+                </p>
+                <p class="details_s">
+                  <span>西湖区</span>
+                  <span>3室2厅1卫</span>
+                  <span>120m²</span>
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!-- 租房内容 -->
+        <ul>
+          <li>
+            <a class="box h100" href="#">
+              <img class="box" src="./image/house-resource/rental.jpg" alt="">
+              <div class="highlignt_r">666<span>元/月</span></div>
+              <div class="intro">
+                <p class="addr_r">绿地中央花园</p>
+                <p class="details_r">
+                  <span>1室3厅1卫</span>
+                  <span>122.21m²</span>
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- 更多链接 -->
+      <div class="more">
+        <a href="#" class="box">
+          更多/ <span>MORE</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- 新闻资讯板块 -->
+  <div class="news">
+    <!-- 大小标题 -->
+    <div class="title">新闻资讯</div>
+    <div class="title_s">新闻资讯专业门户，汇集重要的房地产新闻和行业动态</div>
+    <!-- 主体部分 -->
+    <div class="content">
+      <!-- 左边导航菜单 -->
+      <div class="nav_bar h100">
+        <!-- 标题 -->
+        <div class="title">
+          <span class="box">新闻资讯</span>
+          <span class="box">NEWS</span>
+        </div>
+        <ul class="box">
+          <li class="active">通知公告</li>
+          <li>房源资讯</li>
+          <li>工作动态</li>
+          <li>查看更多</li>
+        </ul>
+      </div>
+      <!-- 中间列表 -->
+      <div class="list_item h100">
+        <ul class="h100 active">
+          <li class="content">
+            <a class="box h100" href="#">
+              <div class="date fl">
+                <span class="box">13</span>
+                <span class="box">2019-05</span>
+              </div>
+              <div class="announcement h100 fl">
+                <div class="title">关于不动产权属证书作废的公告 编号：B2019050503</div>
+                <div class="time">2019-05-13 10:04:25</div>
+                <div class="details">因我机构无法收回下列不动产权属证书，根据《不动产登记暂行条例实施细则》第二十三条的...</div>
+              </div>
+            </a>
+          </li>
+          <li class="sep"></li>
+          <li class="content">
+            <a class="box h100" href="#">
+              <div class="date fl">
+                <span class="box">13</span>
+                <span class="box">2019-05</span>
+              </div>
+              <div class="announcement h100 fl">
+                <div class="title">关于不动产权属证书作废的公告 编号：B2019050503</div>
+                <div class="time">2019-05-13 10:03:58</div>
+                <div class="details">因我机构无法收回下列不动产权属证书，根据《不动产登记暂行条例实施细则》第二十三条的...</div>
+              </div>
+            </a>
+          </li>
+          <li class="sep"></li>
+          <li class="content">
+            <a class="box h100" href="#">
+              <div class="date fl">
+                <span class="box">13</span>
+                <span class="box">2019-05</span>
+              </div>
+              <div class="announcement h100 fl">
+                <div class="title">关于不动产权属证书作废的公告 编号：B2019050503</div>
+                <div class="time">2019-05-13 10:03:35</div>
+                <div class="details">因我机构无法收回下列不动产权属证书，根据《不动产登记暂行条例实施细则》第二十三条的...</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <ul class="h100">
+          <li class="content">
+            <a class="box h100" href="#">
+              <div class="date fl">
+                <span class="box">29</span>
+                <span class="box">2018-12</span>
+              </div>
+              <div class="announcement h100 fl">
+                <div class="title">交房时间：2020-09-30交付 H区5#</div>
+                <div class="time">2018-12-29 16:20:32</div>
+                <div class="details">交房时间：2020-09-30交付交房楼栋：H区5#交房详情：H区5#</div>
+              </div>
+            </a>
+          </li>
+          <li class="sep"></li>
+          <li class="content">
+            <a class="box h100" href="#">
+              <div class="date fl">
+                <span class="box">29</span>
+                <span class="box">2018-12</span>
+              </div>
+              <div class="announcement h100 fl">
+                <div class="title">交房时间：2020-12-31交付H区11#19#22#15#</div>
+                <div class="time">2018-12-29 16:19:42</div>
+                <div class="details">交房时间：2020-12-31交付H区11#19#22#15#交房楼栋：H区11#...</div>
+              </div>
+            </a>
+          </li>
+          <li class="sep"></li>
+          <li class="content">
+            <a class="box h100" href="#">
+              <div class="date fl">
+                <span class="box">29</span>
+                <span class="box">2018-12</span>
+              </div>
+              <div class="announcement h100 fl">
+                <div class="title">开盘时间：2018-09-23已加推H区11#</div>
+                <div class="time">2018-12-29 16:19:01</div>
+                <div class="details">开盘时间：2018-09-23已加推H区11#开盘楼栋：H区11#开盘详情：H区1...</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <ul class="h100">
+          <li class="content">
+            <a class="box h100" href="#">
+              <div class="date fl">
+                <span class="box">13</span>
+                <span class="box">2019-05</span>
+              </div>
+              <div class="announcement h100 fl">
+                <div class="title">不动产上门服务暖人心</div>
+                <div class="time">2019-05-13 09:56:12</div>
+                <div class="details">现居南昌的93岁抗战老兵杨嵩在办理房屋过户时，突发疾病，住进了二附院重症监护室治疗...</div>
+              </div>
+            </a>
+          </li>
+          <li class="sep"></li>
+          <li class="content">
+            <a class="box h100" href="#">
+              <div class="date fl">
+                <span class="box">13</span>
+                <span class="box">2019-05</span>
+              </div>
+              <div class="announcement h100 fl">
+                <div class="title">青春心向党 建功新时代 ——南昌市不动产登记中心组织开展系列五四主题团日活动</div>
+                <div class="time">2019-05-13 09:55:32</div>
+                <div class="details">今年是共和国成立70周年、“五四”运动100周年，为激励和引领广大青年大力弘扬以爱...</div>
+              </div>
+            </a>
+          </li>
+          <li class="sep"></li>
+          <li class="content">
+            <a class="box h100" href="#">
+              <div class="date fl">
+                <span class="box">26</span>
+                <span class="box">2019-04</span>
+              </div>
+              <div class="announcement h100 fl">
+                <div class="title">【世界地球日专栏】之二  珍爱美丽地球 守护自然资源</div>
+                <div class="time">2019-04-26 12:02:08</div>
+                <div class="details">当前，威胁人类生存的十大环境问题（四）酸雨蔓延 酸雨是指大气降水中酸碱度（PH...</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- 右边 -->
+      <div class="details h100">
+        <div class="active h100">
+          <a class="box h100" href="#">
+            <img class="box" src="./image/news/news1.jpg" alt="">
+            <div class="text">
+              <span class="box title">凝心聚力齐并进  奋力拼搏创辉煌 ——登记中心2018年职工运动会圆满落幕</span>
+              <span class="box date">2018-12-07 09:27:41</span>
+              <p class="content">“加油！加油！加油！”12月1日下午，由南昌市不动产登记中心工会组织的2018年职工运动会正热火朝天地开展，大楼操场上传来...</p>
+            </div>
+          </a>
+        </div>
+        <div class="h100">
+          <a class="box h100" href="#">
+            <img class="box" src="./image/news/news2.jpg" alt="">
+            <div class="text">
+              <span class="box title">融创青山湖壹号1#高层在售</span>
+              <span class="box date">2018-12-29 11:45:29</span>
+              <p class="content">融创青山湖壹号1#高层在售，均价约18000元/㎡，该楼为43层超高层楼栋，2梯2户结构，主力户型130-158㎡，装修交...</p>
+            </div>
+          </a>
+        </div>
+        <div class="h100">
+          <a class="box h100" href="#">
+            <img class="box" src="./image/news/news3.jpg" alt="">
+            <div class="text">
+              <span class="box title">登记中心召开“互联网+一手房转移登记” 业务培训会</span>
+              <span class="box date">2018-12-20 11:36:54</span>
+              <p class="content">为深入贯彻十九大精神，登记中心坚持以人民为中心的发展思想，以企业和群众不动产登记需求为向导，不断建立完善南昌市不动产登记部...</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 入驻流程板块 -->
+  <div class="process">
+    <div class="title">入驻流程</div>
+    <div class="title_s">入驻审核严格，确保每一位人民群众的利益不被损害</div>
+    <div class="content">
+      <a href="#" class="item box">
+        <div class="title">网上申请</div>
+      </a>
+      <a href="#" class="item box">
+        <div class="title">原件审核</div>
+      </a>
+      <a href="#" class="item box">
+        <div class="title">签约入驻</div>
+      </a>
+    </div>
+  </div>
+  <!-- 页脚 -->
+  <div class="footer">
+    <div class="container_m">
+      <div class="info fl"></div>
+      <div class="menu fl">
+        <div class="title">目录导航</div>
+        <ul class="clearfix">
+          <li class="fl">
+            <a class="box h100" href="#">网上预审</a>
+          </li>
+          <li class="fl">
+            <a class="box h100" href="#">联系我们</a>
+          </li>
+          <li class="fl">
+            <a class="box h100" href="#">网上预约</a>
+          </li>
+          <li class="fl">
+            <a class="box h100" href="#">南昌房源</a>
+          </li>
+          <li class="fl">
+            <a class="box h100" href="#">生活服务</a>
+          </li>
+          <li class="fl">
+            <a class="box h100" href="#">新闻动态</a>
+          </li>
+          <li class="fl">
+            <a class="box h100" href="#">实用工具</a>
+          </li>
+        </ul>
+      </div>
+      <div class="code fl">
+        <div class="weixin fl h100">
+          <div class="title">扫一扫关注微信</div>
+          <div class="code_img">
+            <img src="./image/weixin_img.c75487b.png" alt="">
+          </div>
+        </div>
+        <div class="app fl h100">
+          <div class="title">APP下载</div>
+          <div class="code_img">
+            <img src="./image/app_img.163ba6e.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="tel fl">
+        <p class="title">咨询热线</p>
+        <p class="tel_num">
+          <i class="iconfont">&#xe81a;</i>
+          <span>0791-83863862</span>
+        </p>
+        <p class="title">在线咨询</p>
+        <p class="qq_service">
+          <i class="iconfont">&#xe87e;</i>
+          <a href="#">24小时在线咨询服务</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <a href="#">赣ICP备17015851号-2</a>&nbsp;
+      <a href="#">
+        <img src="./image/footer/beian.d0289dc.png" alt="">
+        <span>赣公网安备 36010802000217号</span>
+      </a>
+    </div>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+</html>

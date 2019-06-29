@@ -1,0 +1,864 @@
+/* header头部 */
+
+/* 顶部 */
+.header > .top_bar {
+  height: 36px;
+  line-height: 35px;
+  font-size: 12px;
+  background: #f4f4f4;
+  color: #666;
+  border-bottom: 1px solid #e6e6e6;
+}
+.header > .top_bar > .title {
+  height: 100%;
+}
+.header > .top_bar .entry {
+  height: 100%;
+}
+.header > .top_bar .entry > .appCode,
+.header > .top_bar .entry > .weixinCode {
+  padding: 0 20px;
+  cursor: pointer;
+  position: relative;
+}
+.header > .top_bar .entry > .weixinCode {
+  border-left: 1px solid #e8e8e8;
+}
+.header > .top_bar .entry > .login,
+.header > .top_bar .entry > .register {
+  padding: 0 15px;
+  color: #fff;
+}
+.header > .top_bar .entry > .login {
+  background: #333;
+}
+.header > .top_bar .entry > .register {
+  background: #ff9906;
+}
+.header > .top_bar .icon {
+  width: 23px;
+}
+/* 二维码样式及hover事件 */
+.header > .top_bar .code_container {
+  width: 125px;
+  height: 0;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  overflow: hidden;
+  transition: all .2s ease;
+}
+.header > .top_bar .code {
+  /* width: 115px;
+  height: 139px; */
+  border: 1px solid #ebeef5;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+  background: #fff;
+  margin-top: 5px;
+  padding: 10px 5px;
+  position: relative;
+  z-index: 10;
+}
+.header > .top_bar .code > .arrow {
+  width: 0;
+  height: 0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+  position: absolute;
+  top: -10px;
+  right: 50px;
+}
+.header > .top_bar .code img {
+  width: 113px;
+}
+.header > .top_bar .entry > .appCode:hover .code_container,
+.header > .top_bar .entry > .weixinCode:hover .code_container {
+  height: 150px;
+}
+/* header主体部分 */
+.header > .top_content {
+  height: 105px;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative
+}
+.header > .top_content > .container_m {
+  position: relative;
+}
+  /* 搜索栏 */
+.header > .top_content  .search_container {
+  width: 415px;
+  height: 40px;
+  border: 2px solid #ff9906;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.header > .top_content  .search_container > .search {
+  width: 361px;
+  height: 36px;
+  background: #fff;
+  padding: 0 16px;
+  font-size: 14px;
+}
+.header > .top_content  .search_container > .btn_m {
+  cursor: pointer;
+  width: 50px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 0;
+  background: #ff9906;
+  color: #fff;
+  font-size: 20px;
+  padding: 0;
+}
+  /* 电话号码 */
+.header > .top_content .phone_number {
+  height: 47px;
+  width: auto;
+  padding-top: 20px;
+  font-size: 21px;
+  font-weight: bold;
+  color: #ff9906;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  background: url(../image/lianxidianhua.png) 50% 0 no-repeat;
+}
+
+/* 分类导航 */
+.navbar{
+  height: 53px;
+  border-bottom: 3px solid #ff9906;
+  padding: 0;
+}
+.navbar > .container_m {
+  text-align: center;
+}
+.navbar ul {
+  display: inline-block;
+}
+.navbar ul > li {
+  padding: 15px 0;
+  height: 50px;
+}
+.navbar  ul > li > a {
+  padding: 0 58px;
+  border-right: 1px solid #e6e6e6;
+  height: 100%;
+  text-align: center;
+  color: #999;
+  font-size: 18px;
+  line-height: 20px;
+}
+.navbar  ul  a:hover {
+  text-decoration: none;
+  color: #ff9906;
+}
+.navbar  ul > li.active {
+  background: #ff9906;
+}
+.navbar  ul > li.active > a {
+  color: #fff;
+  border: none;
+}
+
+/* 轮播图 */
+.carousel-inner img {
+  width: 100%;
+  min-width: 1200px;
+}
+.carousel-control-prev span,
+.carousel-control-next span {
+  display: none;
+}
+/* 服务中心 */
+.service_center {
+  width: 1200px;
+  height: 618px;
+  padding: 63px 0;
+  margin: 0 auto;
+}
+  /* 大小标题 */
+.service_center > .title {
+  text-align: center;
+  font-size: 32px;
+  height: 42px;
+  line-height: 42px;
+  margin-bottom: 24px;
+}
+.service_center > .title_s {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  height: 21px;
+  line-height: 21px;
+  margin-bottom: 48px;
+}
+  /* 内容 */
+.service_center > .content {
+  height: 357px;
+  border-top: 1px solid #eee;
+}
+  
+.service_center > .content > .aside {
+  width: 450px;
+}
+.service_center > .content > .center {
+  width: 300px;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  overflow: hidden;
+}
+.service_center > .content > .aside > .item {
+  border: 1px solid #eee;
+  border-top: none;
+  height: 178px;
+}
+.service_center > .content > .aside > .item > a {
+  padding: 48px 50px 48px 62px;
+  color: #484848;
+}
+.service_center > .content > .aside > .item > a > img {
+  width: 84px;
+}
+.service_center > .content > .aside > .item > a > .intro {
+  width: 216px;
+}
+.service_center > .content > .aside > .item > a > .intro > .title {
+  height: 29px;
+  line-height: 29px;
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+.service_center > .content > .aside > .item > a > .intro > p {
+  height: 42px;
+  line-height: 21px;
+  font-size: 16px;
+}
+.service_center > .content > .aside > .item > a:hover {
+  color: #ff9906;
+}
+.service_center > .content > .center > img {
+  width: 100%;
+  height: 356px;
+}
+.service_center > .content > .center > a {
+  width: 98px;
+  height: 34px;
+  line-height: 34px;
+  border: 1px solid #ffb86e;
+  color: #ffb86e;
+  font-size: 16px;
+  position: absolute;
+  left: 101px;
+  top: 182px;
+  text-align: center;
+}
+  /* 动画效果 */
+.service_center > .content > .center > img:hover {
+  animation: scale 1s ease;
+}
+.service_center > .content > .aside > .item > a:hover img {
+  animation: swing 1s ease;
+}
+
+/* 房源板块 */
+.house_resource {
+  height: 724px;
+  /* 背景图片 */
+  background: url('../image/house-resource/hr-background.0010f96.png') no-repeat;
+  background-size: 100% 100%;
+  padding: 63px 0;
+}
+  /* 大小标题 */
+.house_resource > .title {
+  height: 42px;
+  line-height: 42px;
+  font-size: 32px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.house_resource > .title_s {
+  height: 21px;
+  line-height: 21px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 42px;
+}
+  /* 主体部分 */
+.house_resource > .content {
+  height: 476px;
+  width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+}
+  /* 选项卡列表菜单 */
+.house_resource > .content > .nav_list {
+  height: 68px;
+}
+.house_resource > .content > .nav_list > li {
+  width: 400px;
+  height: 60px;
+  padding-top: 16px;
+  cursor: pointer;
+  background: #e8e8e8;
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  line-height: 28px;
+}
+.house_resource > .content > .nav_list > li.active {
+  margin-top: -8px;
+  height: 68px;
+  background: #fff;
+}
+.house_resource > .content > .nav_list > li.middle {
+  border-width: 0 1px;
+  border-style: solid;
+  border-color: #fff;
+}
+.house_resource > .content > .nav_list > li > span {
+  color: #a9a9a9;
+  font-weight: 500;
+}
+.house_resource > .content > .nav_list > li > span.eng {
+  font-size: 16px;
+}
+  /* 选项卡内容部分 */
+.house_resource > .content > .list_container {
+  height: 346px;
+  padding: 42px 26px 40px;
+  overflow: hidden;
+}
+    /* flex布局 */
+.house_resource > .content > .list_container > ul {
+  height: 100%;
+  justify-content: space-between;
+  display: none;
+}
+.house_resource > .content > .list_container > ul.active {
+  display: -webkit-flex;
+  display: flex;
+}
+    /* 每个item布局 */
+.house_resource > .content > .list_container > ul > li {
+  width: 250px;
+  height: 264px;
+  border: 1px solid #ebebeb;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+  position: relative;
+  transition: transform .5s ease;
+}
+    /* hover动画过度效果 */
+.house_resource > .content > .list_container > ul > li:hover {
+  transform: scale(1.1);
+}
+    /* 图片 */
+.house_resource > .content > .list_container > ul > li img {
+  width: 248px;
+  height: 190px;
+}
+    /* 新房栏图片上加一层覆盖 */
+.house_resource > .content > .list_container > ul > li .cover {
+  width: 248px;
+  height: 190px;
+  padding-top: 64px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,.5);
+}
+.house_resource > .content > .list_container > ul > li .cover > span {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+    /* 新房栏下面文字说明 */
+.house_resource > .content > .list_container > ul > li .intro {
+  width: 248px;
+  height: 72px;
+  padding: 10px 15px;
+  color: #000;
+  font-size: 16px;
+}
+.house_resource > .content > .list_container > ul > li .intro > .addr {
+  height: 21px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.house_resource > .content > .list_container > ul > li .intro > .addr > span {
+  display: inline-block;
+  margin-left: 10px;
+}
+.house_resource > .content > .list_container > ul > li .intro > .price > span {
+  color: #ff0000;
+}
+    /* 二手房栏左边价格高亮显示 */
+.house_resource > .content > .list_container > ul > li .highlignt {
+  height: 42px;
+  padding: 0 10px;
+  position: absolute;
+  left: -7px;
+  bottom: 80px;
+  font-size: 18px;
+  line-height: 32px;
+  color: #fff;
+  text-align: center;
+  background: url(../image/house-resource/2-hignlight.png) no-repeat;
+  background-size: 100% 100%;
+}
+    /* 二手房栏下面文字说明 */
+.house_resource > .content > .list_container > ul > li .intro > .details {
+  font-size: 18px;
+  height: 24px;
+  line-height: 24px;
+  margin-bottom: 6px;
+  position: relative;
+}
+.house_resource > .content > .list_container > ul > li .intro > .details > .addr {
+  display: inline-block;
+  width: 128px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.house_resource > .content > .list_container > ul > li .intro > .details > .decoration{
+  width: 72px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.house_resource > .content > .list_container > ul > li .intro > .details_s {
+  height: 21px;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  line-height: 21px;
+  font-size: 16px;
+  color: #c6c6c6;
+}
+    /* 租房高亮显示租价 */
+.house_resource > .content > .list_container > ul > li .highlignt_r {
+  padding: 0 10px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  bottom: 72px;
+  background: #1d212c;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fcb31b;
+  text-align: center;
+}
+.house_resource > .content > .list_container > ul > li .highlignt_r > span {
+  font-size: 12px;
+}
+    /* 租房下面文字说明 */
+.house_resource > .content > .list_container > ul > li .intro > .addr_r {
+  height: 21px;
+  line-height: 21px;
+}
+.house_resource > .content > .list_container > ul > li .intro > .details_r {
+  height: 21px;
+  line-height: 21px;
+  color: #c6c6c6;
+}
+.house_resource > .content > .list_container > ul > li .intro > .details_r > span {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+    /* 房源底部more链接 */
+.house_resource > .content > .more {
+  height: 36px;
+}
+.house_resource > .content > .more > a {
+  width: 148px;
+  height: 36px;
+  border: 1px solid #ff9906;
+  margin: 0 auto;
+  color: #ff9906;
+  text-align: center;
+  font-size: 19px;
+  line-height: 34px;
+}
+.house_resource > .content > .more > a > span {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* 新闻资讯板块 */
+.news {
+  height: 646px;
+  padding: 62px 0;
+}
+/* 大小标题 */
+.news > .title {
+  text-align: center;
+  font-size: 32px;
+  line-height: 42px;
+  margin-bottom: 19px;
+  color: #000;
+}
+.news > .title_s {
+  text-align: center;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 42px;
+  color: #666;
+}
+/* 主体部分 */
+.news > .content {
+  height: 398px;
+  width: 1200px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+/* 左边导航菜单 */
+.news > .content > .nav_bar {
+  width: 250px;
+  background: url('../image/news/background.png') no-repeat;
+  background-size: 100% 100%;
+}
+.news > .content > .nav_bar > .title {
+  width: 146px;
+  height: 73px;
+  font-size: 24px;
+  color: #fff;
+  margin: 26px auto;
+}
+.news > .content > .nav_bar > .title > span:first-child {
+  font-size: 32px;
+  height: 42px;
+  font-weight: 700;
+}
+.news > .content > .nav_bar > ul {
+  height: 238px;
+  width: 100%;
+}
+.news > .content > .nav_bar > ul > li {
+  cursor: pointer;
+  width: 146px;
+  height: 46px;
+  margin: 18px auto 0;
+  line-height: 46px;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  background: #ffc393;
+}
+.news > .content > .nav_bar > ul > li:first-child {
+  margin-top: 0; 
+}
+.news > .content > .nav_bar > ul > li.active {
+  color: #ffc393;
+  background: #fff;
+}
+/* 中间列表 */
+.news > .content > .list_item {
+  width: 480px;
+}
+.news > .content > .list_item > ul {
+  display: none;
+}
+.news > .content > .list_item > ul.active {
+  display: block;
+}
+/* hover放大动画 */
+.news > .content > .list_item > ul > .content {
+  height: 97px;
+  transition: transform .5s ease;
+}
+.news > .content > .list_item > ul > .content:hover {
+  transform: scale(1.05);
+}
+/* 虚线隔开 */
+.news > .content > .list_item > ul > .sep {
+  margin: 30px 0 22px;
+  border-top: 2px dashed #eee;
+}
+/* 内容样式 */
+.news > .content > .list_item > ul > .content .date {
+  height: 96px;
+  width: 100px;
+  padding: 14px 0;
+  color: #000;
+  background: #eee;
+  text-align: center;
+}
+.news > .content > .list_item > ul > .content .date > span:first-child {
+  
+  font-size: 32px;
+  line-height: 42px;
+}
+.news > .content > .list_item > ul > .content .date > span:last-child {
+  font-size: 18px;
+  line-height: 24px;
+}
+.news > .content > .list_item > ul > .content .announcement {
+  width: 370px;
+  margin-left: 8px;
+  color: #000;
+}
+.news > .content > .list_item > ul > .content .announcement > .title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.news > .content > .list_item > ul > .content .announcement > .time {
+  font-size: 16px;
+  line-height: 31px;
+  color: #999;
+}
+.news > .content > .list_item > ul > .content .announcement > .details {
+  font-size: 16px;
+  line-height: 21px;
+  height: 42px;
+  color: #999;
+}
+/* 右边新闻 */
+.news > .content > .details {
+  width: 380px;
+  border: 1px solid #eee;
+  transition: transform .5s ease;
+}
+/* hover放大动画 */
+.news > .content > .details:hover {
+  transform: scale(1.05);
+}
+.news > .content > .details > div {
+  display: none;
+}
+.news > .content > .details > div.active {
+  display: block;
+}
+/* 右边新闻布局 */
+.news > .content > .details img {
+  width: 100%;
+  height: 208px;
+}
+.news > .content > .details .text {
+  height: 190px;
+  padding: 24px 18px 18px;
+}
+.news > .content > .details .text > .title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.news > .content > .details .text > .date {
+  font-size: 16px;
+  line-height: 61px;
+  color: #999;
+}
+.news > .content > .details .text > .content {
+  font-size: 16px;
+  line-height: 21px;
+  color: #999;
+}
+
+/* 入驻流程板块 */
+.process {
+  height: 520px;
+  padding: 58px 0 63px;
+  background: #eee;
+}
+/* 大小标题 */
+.process > .title {
+  font-size: 32px;
+  line-height: 42px;
+  margin-bottom: 16px;
+  color: #000;
+  text-align: center;
+}
+.process > .title_s {
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 50px;
+  color: #666;
+  text-align: center;
+}
+/* 内容 */
+.process > .content {
+  width: 1200px;
+  height: 270px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.process > .content > .item {
+  width: 370px;
+  height: 270px;
+  position: relative;
+}
+.process > .content > .item:first-of-type {
+  background: url('../image/process/process1.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+.process > .content > .item:nth-of-type(2) {
+  background: url('../image/process/process2.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+.process > .content > .item:last-of-type {
+  background: url('../image/process/process3.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+.process > .content > .item > .title {
+  line-height: 50px;
+  width: 100%;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  color: #fff;
+  background: rgba(13,13,13,0.5);
+}
+
+/* 页脚 */
+.footer {
+  height: 290px;
+  border-top: 10px solid #ff9906;
+  background: #333;
+  color: #c8c8c9;
+}
+.footer > .container_m {
+  height: 234px;
+  padding: 40px 0;
+}
+/* 页脚左边 */
+.footer .info {
+  width: 150px;
+  height: 154px;
+  border-right: 2px solid hsla(0,0%,100%,.3);
+  background: url('../image/footer/info.png') no-repeat;
+}
+/* 页脚导航 */
+.footer .menu {
+  width: 322px;
+  height: 154px;
+  padding-left: 75px;
+  border-right: 2px solid hsla(0,0%,100%,.3);
+}
+.footer .menu > .title {
+  font-size: 21px;
+  line-height: 22px;
+  /* color: #c8c8c9; */
+  margin-bottom: 11px;
+}
+.footer .menu > ul > li {
+  width: 64px;
+  height: 32px;
+  margin-right: 45px;
+  line-height: 32px;
+  font-size: 16px;
+}
+.footer .menu > ul > li > a {
+  color: #c8c8c9;
+}
+/* 页脚二维码 */
+.footer .code {
+  width: 405px;
+  height: 154px;
+  padding-left: 60px;
+  border-right: 2px solid hsla(0,0%,100%,.3);
+}
+/* 微信 */
+.footer .code > .weixin {
+  font-size: 0;
+  margin-right: 30px;
+}
+.footer .code > div > .title {
+  font-size: 19px;
+  line-height: 25px;
+  margin-bottom: 12px;
+}
+.footer .code > div > .code_img {
+  text-align: center;
+  height: 113px;
+}
+.footer .code > div > .code_img > img {
+  height: 113px;
+  width: 114px;
+}
+/* APP */
+.footer .code > .app > .title {
+  text-align: center;
+}
+.footer .code > .app > .code_img {
+  height: 115px;
+  width: 115px;
+}
+.footer .code > .app > .code_img > img {
+  height: 115px;
+  width: 115px;
+}
+/* 页脚联系方式 */
+.footer .tel {
+  height: 154px;
+  width: 320px;
+  padding-left: 70px;
+}
+.footer .tel > .title {
+  font-size: 21px;
+  line-height: 29px;
+}
+.footer .tel > .tel_num {
+  font-size: 25px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 45px;
+  position: relative;
+}
+.footer .tel > .qq_service {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 45px;
+  position: relative;
+}
+.footer .tel > .qq_service > a {
+  font-size: 21px;
+  color: #c8c8c9;
+}
+.footer .tel i {
+  font-size: 40px;
+  line-height: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.footer > .footer_bottom {
+  letter-spacing: 1px;
+  height: 56px;
+  line-height: 48px;
+  text-align: center;
+  font-size: 16px;
+  background: #222;
+}
+.footer > .footer_bottom a {
+  color: #939393;
+}
+.footer > .footer_bottom img {
+  vertical-align: -4px;
+}
